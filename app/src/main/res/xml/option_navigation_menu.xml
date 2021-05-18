@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_color"
+        android:enabled="true"
+        android:icon="@mipmap/ic_color_lens_white_24dp"
+        android:title="@string/color"
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+        <!--android:id="@+id/action_draw"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@mipmap/paint_icon"-->
+        <!--android:title="@string/draw_over"-->
+        <!--app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/action_blur"
+        android:enabled="true"
+        android:icon="@mipmap/ic_blur_white_24dp"
+        android:title="@string/blur"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_sharpen"
+        android:enabled="true"
+        android:icon="@mipmap/ic_sharpen_white_24dp"
+        android:title="@string/sharpen"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_rotateCrop"
+        android:enabled="true"
+        android:icon="@mipmap/ic_crop_rotate_white_24dp"
+        android:title="@string/rotate_crop"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_tune"
+        android:enabled = "true"
+        android:icon="@mipmap/ic_tune_white_24dp"
+        android:title="@string/tune"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

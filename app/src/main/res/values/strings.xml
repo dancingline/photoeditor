@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Photo Editor</string>
+    <string name="blur">Blur</string>
+    <string name="draw_over">Draw</string>
+    <string name="sharpen">Sharpen</string>
+    <string name="color">Color</string>
+    <string name="rotate_crop">Rotate/Crop</string>
+    <string name="tune">Tune</string>
+    <string name="transition_image">transition:IMAGE</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="rotate_right">Rotate Right</string>
+    <string name="rotate_left">Rotate Left</string>
+</resources>

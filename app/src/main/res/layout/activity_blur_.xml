@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.photoeditor.photoeditor.Blur_Activity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/blurDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_image"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_changes_button_Blur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+         />
+
+    <Button
+        android:id="@+id/save_changes_button_Blur"
+        android:layout_width="107dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/save_changes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/saveOptionBlur"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/clearBlurButton"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/white"
+        android:text="Clear Drawing"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/save_changes_button_Blur"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/saveOptionBlur"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_save_white_48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelOptionBlur"/>
+    <ImageView
+        android:id="@+id/cancelOptionBlur"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_cancel_white_48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/colorOptionBlur"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:src="@mipmap/ic_color_lens_white_48dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/saveOptionBlur"/>-->
+    <SeekBar
+        android:id="@+id/blurBar"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:max="10"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/colorOptionDraw"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/blurText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Bluring degree"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/blurBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
